@@ -6,3 +6,29 @@ body {
     padding: 2rem 1.5rem;
     text-align: center;
 }
+
+.button-3d {
+	height: 1.2em;
+}
+
+.printer {
+	width: 50%;
+	text-align: center;
+}
+
+.edison {
+	padding-top: 2.33em;
+	padding-bottom: 2.8em;
+}
+
+.code-format {
+	font-family: monospace;
+}
+
+.sequence {
+	border-radius: 0.3em;
+	padding: 0.3em;
+	background-color: lightgoldenrodyellow;
+	font-weight: bold;
+	font-size: 1em;
+}

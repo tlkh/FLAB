@@ -27,23 +27,22 @@
   </div>
 </nav>
 <div class="container"> <br>
-  <h1>Step 1: Preparation</h1>
-  <h3>1. Preheat Filament</h3>
-  <p>Image placeholder.</p>
-  <p class="sequence">Menu Sequence: <img src="img/3d.png" class="button-3d"> &rarr; Preheat</p>
-  <p>Printer will begin to heat extruder head to 230&deg;C (default setting). Do not touch the extruder head with your bare hands.</p>
-  <p>Press the left arrow to exit.</p>
-  <h3>2. Filament Loading</h3>
-  <p>Image placeholder</p>
-  <p class="sequence">Menu Sequence: <img src="img/3d.png" class="button-3d"> &rarr; Utilities &rarr; Loading/Unloading &rarr; Load Filament</p>
-  <p>Image placeholder</p>
-  <p>Once the extruder head is hot enough, filament will begin to flow out of the extruder head. You will hear a tone.</p>
-  <p>Once the flow is steady, press <img src="img/3d.png" class="button-3d"> (not the left arrow!) to stop the loading procedure.</p>
-  <div class="row">
-  	<div class="col"><a class="btn btn-outline-primary btn-block disabled" href="#" role="button">Back</a></div>
-  	<div class="col"></div>
-  	<div class="col"><a class="btn btn-outline-primary btn-block " href="printing_2.html" role="button">Next</a></div>
-  </div>
+  <h1>Slicing</h1>
+  <p>Slicing, or toolpath generation, is preparing your model for 3D printing.</p>
+  <h3>Model Preparation</h3>
+  <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <span class="code-format">.stl</span> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may also need to select the orientation of the model.</p>
+  <h3>Software (CreatorK)</h3>
+  <p>Install the CreatorK software from the SD card provided with the Edison+ printer.</p>
+  <p>Placeholder for Korean settings</p>
+  <img src="img/machine.png" style="width: 90%">
+  <p>Under the menu, Select Machine &rarr; Machine Type (Driver) &rarr; The Edison+ Single.</p>
+  <p>Load the model (<span class="code-format">.stl</span>) into CreatorK and ensure that the size and orientation of the model is correct. You may use the built-in tools in CreatorK to adjust the position of your model.</p>
+  <p><b>Your model must not exceed 90% of the build plate!</b></p>
+  <h3>Recommended Settings</h3>
+  <p>Placeholder</p>
+  <h3>Transferring to Printer</h3>
+  <p>Copy the generated <span class="code-format">.x3g</span> file into the SD card and slot it into the printer.</p>
+  <p>You may like to review the <a href="printing_1.html">printing procedure</a>.</p>
 </div>
 <script src="../js/jquery.js"></script> 
 <script src="../js/bootstrap.min.js"></script>
