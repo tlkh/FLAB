@@ -1,89 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<link rel="icon" href="favicon.ico">
 <title>FLAB</title>
-<!-- Path to Framework7 Library CSS-->
-<link rel="stylesheet" href="css/framework7.ios.min.css">
-<link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-<!-- Path to your custom app styles-->
-<link rel="stylesheet" href="css/my-app.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/app.css" rel="stylesheet">
 </head>
 <body>
-<!-- Status bar overlay for fullscreen mode-->
-<div class="statusbar-overlay"></div>
-<!-- Views-->
-<div class="views"> 
-  <!-- Your main view, should have "view-main" class-->
-  <div class="view view-main"> 
-    <!-- Top Navbar-->
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="center">Home</div>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <a class="navbar-brand" href="#">FLAB</a>
+  <div class="collapse navbar-collapse" id="navbarsMain">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEdison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Edison+ </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownEdison"> <a class="dropdown-item" href="edison/printing_1.html">Printing</a> <a class="dropdown-item" href="edison/load.html">Loading/Unloading</a> <a class="dropdown-item" href="edison/troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="edison/spec.html">Specifications</a> </div>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMankati" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mankati </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMankati"> <a class="dropdown-item" href="mankati/printing.html">Printing</a> <a class="dropdown-item" href="mankati/load.html">Loading/Unloading</a> <a class="dropdown-item" href="mankati/troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="mankati/spec.html">Specifications</a> </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="info.html">Information</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <div class="lead-page">
+    <h1>SUTD Fab Lab</h1>
+    <p class="lead">Digital Prototyping Lab</p>
+    <p>This web application provides step by step instructions on using the 3D printers in SUTD.</p>
+    <div class="row">
+      <div class="col-sm">
+        <div class="list-group">
+          <p class="list-group-item"><b>Edison+ Single</b></p>
+          <a href="edison/printing_1.html" class="list-group-item list-group-item-action">Printing</a> <a href="edison/load.html" class="list-group-item list-group-item-action">Loading/Unloading</a> <a href="edison/troubleshooting.html" class="list-group-item list-group-item-action">Troubleshooting</a> <a href="edison/specs.html" class="list-group-item list-group-item-action">Specifications</a> </div>
+        <br>
       </div>
-    </div>
-    <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-    <div class="pages navbar-through toolbar-through"> 
-      <!-- Page, data-page contains page name-->
-      <div data-page="index" class="page"> 
-        <!-- Scrollable page content-->
-        <div class="page-content">
-          <div class="content-block-title">INTRODUCTION</div>
-          <div class="content-block">
-            <div class="content-block-inner">
-              <p><b>Welcome to FLAB!</b></p>
-              <p>Get step by step instructions for Fab Lab equipment.</p>
-            </div>
-          </div>
-          <div class="content-block-title">Digital Prototyping Lab</div>
-          <div class="list-block">
-            <ul>
-              <li class="list-group-title">3D Printers</li>
-              <li><a href="edison.html" class="item-link">
-                <div class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">Edison+</div>
-                  </div>
-                </div>
-                </a></li>
-              <li><a href="mankati.html" class="item-link">
-                <div class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">Mankati FS XT+</div>
-                  </div>
-                </div>
-                </a></li>
-              <li class="list-group-title">Slicing Software</li>
-              <li><a href="creatork.html" class="item-link">
-                <div class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">CreatorK</div>
-                  </div>
-                </div>
-                </a></li>
-              <li><a href="mankatium.html" class="item-link">
-                <div class="item-content">
-                  <div class="item-inner">
-                    <div class="item-title">MankatiUM</div>
-                  </div>
-                </div>
-                </a></li>
-            </ul>
-          </div>
-          <div class="content-block-title">Laser Cutter</div>
-          <div class="content-block-title">MakerSpace 1</div>
-          <div class="content-block-title">MakerSpace 2</div>
-        </div>
+      <div class="col-sm">
+        <div class="list-group">
+          <p class="list-group-item"><b>Mankati Fullscale XT Plus</b></p>
+          <a href="mankati/printing.html" class="list-group-item list-group-item-action">Printing</a> <a href="mankati/load.html" class="list-group-item list-group-item-action">Loading/Unloading</a> <a href="mankati/troubleshooting.html" class="list-group-item list-group-item-action">Troubleshooting</a> <a href="mankati/specs.html" class="list-group-item list-group-item-action">Specifications</a> </div>
+        <br>
       </div>
     </div>
   </div>
 </div>
-<!-- Path to Framework7 Library JS--> 
-<script type="text/javascript" src="js/framework7.min.js"></script> 
-<!-- Path to your app js--> 
-<script type="text/javascript" src="js/my-app.js"></script>
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
