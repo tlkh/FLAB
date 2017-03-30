@@ -16,30 +16,34 @@
 <!-- Status bar overlay for fullscreen mode-->
 <div class="statusbar-overlay"></div>
 <!-- Views-->
-<div class="views"> 
-  <!-- Your main view, should have "view-main" class-->
-  <div class="view view-main"> 
-    <!-- Top Navbar-->
-    <div class="navbar">
-      <div class="navbar-inner"> 
-        <!-- Now, Left and Center parts reflect page title and page links, let's slide them -->
-        <div class="left sliding"> <a href="#" class="link back"><i class="icon icon-back"></i>Home</a> </div>
-        <div class="center sliding">Mankati</div>
-      </div>
+<div class="views">
+<!-- Your main view, should have "view-main" class-->
+<div class="view view-main"> 
+  <!-- Top Navbar-->
+  <div class="navbar">
+    <div class="navbar-inner"> 
+      <!-- Now, Left and Center parts reflect page title and page links, let's slide them -->
+      <div class="left sliding"> <a href="#" class="link back"><i class="icon icon-back"></i>Home</a> </div>
+      <div class="center sliding">Mankati</div>
     </div>
-    <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-    <div class="pages navbar-through toolbar-through"> 
-      <!-- Page, data-page contains page name-->
-      <div data-page="index" class="page"> 
-        <!-- Scrollable page content-->
-        <div class="page-content">
-          <div class="content-block-title">INTRODUCTION</div>
-          <div class="content-block">
-            <div class="content-block-inner">
-              <p><b>Mankati Fullscale XT Plus</b></p>
-              <p>Step by step instructions for printing with the Mankati Fullscale XT Plus printer (Fab Lab free access printer).</p>
-              <p>Operating Hours: 9am to 6pm (overnight prints loaded before 5:30pm)</p>
-              <p>Please remember to log filament usage.</p>
+  </div>
+  <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+  <div class="pages navbar-through toolbar-through"> 
+    <!-- Page, data-page contains page name-->
+    <div data-page="index" class="page"> 
+      <!-- Scrollable page content-->
+      <div class="page-content">
+        <div class="content-block-title">INTRODUCTION</div>
+        <div class="content-block">
+          <div class="tab-links"> <a href="#" class="tab-link" data-tab=".tab1">Tab 1</a> <a href="#" class="tab-link" data-tab=".tab2">Tab 2</a>
+            <div class="tabs">
+              <div class="tab active" id="tab1">
+                <p><b>Mankati Fullscale XT Plus</b></p>
+                <p>Step by step instructions for printing with the Mankati Fullscale XT Plus printer (Fab Lab free access printer).</p>
+                <p>Operating Hours: 9am to 6pm (overnight prints loaded before 5:30pm)</p>
+                <p>Please remember to log filament usage.</p>
+              </div>
+              <div class="tab" id="tab2">Important Specs</div>
             </div>
           </div>
         </div>
