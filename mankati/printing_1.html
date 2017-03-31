@@ -17,10 +17,10 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a></li>
       <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEdison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Edison+ </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownEdison"> <a class="dropdown-item" href="slicing.html">Slicing</a> <a class="dropdown-item" href="printing_1.html">Printing</a> <a class="dropdown-item" href="load.html">Loading/Unloading</a> <a class="dropdown-item" href="troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="specs.html">Specifications</a> </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownEdison"> <a class="dropdown-item" href="../edison/slicing.html">Slicing</a> <a class="dropdown-item" href="../edison/printing_1.html">Printing</a> <a class="dropdown-item" href="../edison/load.html">Loading/Unloading</a> <a class="dropdown-item" href="../edison/troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="../edison/specs.html">Specifications</a> </div>
       </li>
       <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMankati" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mankati </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMankati"> <a class="dropdown-item" href="../mankati/slicing.html">Slicing</a> <a class="dropdown-item" href="../mankati/printing.html">Printing</a> <a class="dropdown-item" href="../mankati/load.html">Loading/Unloading</a> <a class="dropdown-item" href="../mankati/troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="../mankati/specs.html">Specifications</a> </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMankati"> <a class="dropdown-item" href="slicing.html">Slicing</a> <a class="dropdown-item" href="printing_1.html">Printing</a> <a class="dropdown-item" href="../mankati/load.html">Loading/Unloading</a> <a class="dropdown-item" href="troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="specs.html">Specifications</a> </div>
       </li>
       <li class="nav-item"> <a class="nav-link" href="../info.html">Information</a></li>
     </ul>
@@ -28,22 +28,39 @@
 </nav>
 <div class="container"> <br>
   <h1>Step 1: Preparation</h1>
-  <h3>1. Preheat Filament</h3>
-  <p>Image placeholder.</p>
-  <p class="sequence">Menu Sequence: <img src="img/3d.png" class="button-3d"> &rarr; Preheat</p>
-  <p>Printer will begin to heat extruder head to 230&deg;C (default setting). Do not touch the extruder head with your bare hands.</p>
-  <p>Press the left arrow to exit.</p>
-  <h3>2. Filament Loading</h3>
-  <p>Image placeholder</p>
-  <p class="sequence">Menu Sequence: <img src="img/3d.png" class="button-3d"> &rarr; Utilities &rarr; Loading/Unloading &rarr; Load Filament</p>
-  <p>Image placeholder</p>
-  <p>Once the extruder head is hot enough, filament will begin to flow out of the extruder head. You will hear a tone.</p>
-  <p>Once the flow is steady, press <img src="img/3d.png" class="button-3d"> (not the left arrow!) to stop the loading procedure.</p>
+  <h3>1. Auto Home</h3>
+  <img src="img/screen.JPG" class="instruction-img">
+  <p class="sequence">Menu Sequence: ENTER &rarr; Prepare &rarr; Auto home<br><small>Push the control knob in to give the ENTER command.</small></p>
+  <img src="img/autohome1.JPG" class="instruction-img">
+  <p class="sequence">Press ENTER.</p>
+  <p>The build plate will begin to move up towards the extruder. It will stop when it reaches the extruder.</p>
+  <img src="img/autohome2.JPG" class="instruction-img">
+  <p>This step resets the <span class="code-format">Z = 0.0 mm</span> point.</p>
+  <h3>2. Loading Filament</h3>
+  <p>Preheat the extruder.</p>
+  <p class="sequence">Menu Sequence: ENTER &rarr; Prepare &rarr; Preheat PLA &rarr; Preheat PLA 1</p>
+  <img src="img/preheat_PLA1.JPG" class="instruction-img">
+  <p class="sequence">Press ENTER.</p>
+  <img src="img/screen_heating.JPG" class="instruction-img">
+  <p>The extruder will begin to heat up to the target temperature from the current temperature. These are marked in the picture above.</p>
+  <p>While it is heating, move the build plate down to <span class="code-format">Z = 30.0 mm</span> or more. Do not turn the knob too far ahead as the printer will follow through with the command even if it is reversed!</p>
+  <p class="sequence">Menu Sequence: ENTER &rarr; Prepare &rarr; Move axis &rarr; 1mm &rarr; Move Z</p>
+  <img src="img/menu_z.JPG" class="instruction-img">
+  <p class="sequence">Press ENTER and turn the control knob clockwise.</p>
+  <img src="img/move_z.JPG" class="instruction-img">
+  <p>Back out into the info screen. Once the target temperature is reached, we can begin to extrude some filament.</p>
+  <p class="sequence">Menu Sequence: ENTER &rarr; Prepare &rarr; Move axis &rarr; 1mm &rarr; Move Extruder</p>
+  <img src="img/menu_extruder.JPG" class="instruction-img">
+  <p class="sequence">Press ENTER and turn the control knob clockwise.</p>
+  <img src="img/move_extruder.JPG" class="instruction-img">
+  <p>If the extruder head is hot enough and filament is loaded properly, filament will begin to flow out of the extruder head. If this is not the case, contact Fab Lab staff for help.</p>
+  <p></p>
   <div class="row">
-  	<div class="col"><a class="btn btn-outline-primary btn-block disabled" href="#" role="button">Back</a></div>
-  	<div class="col"></div>
-  	<div class="col"><a class="btn btn-outline-primary btn-block " href="printing_2.html" role="button">Next</a></div>
+    <div class="col"><a class="btn btn-outline-primary btn-block disabled" href="#" role="button">Back</a></div>
+    <div class="col"></div>
+    <div class="col"><a class="btn btn-outline-primary btn-block " href="printing_2.html" role="button">Next</a></div>
   </div>
+  <br>
 </div>
 <script src="../js/jquery.js"></script> 
 <script src="../js/bootstrap.min.js"></script>
