@@ -16,10 +16,10 @@
   <div class="collapse navbar-collapse" id="navbarsMain">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item"> <a class="nav-link" href="../index.html">Home</a></li>
-      <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEdison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Edison+ </a>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEdison" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Edison+ </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownEdison"> <a class="dropdown-item" href="../edison/slicing.html">Slicing</a> <a class="dropdown-item" href="../edison/printing_1.html">Printing</a> <a class="dropdown-item" href="../edison/load.html">Loading/Unloading</a> <a class="dropdown-item" href="../edison/troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="../edison/specs.html">Specifications</a> </div>
       </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMankati" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mankati </a>
+      <li class="nav-item dropdown  active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMankati" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Mankati </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMankati"> <a class="dropdown-item" href="slicing.html">Slicing</a> <a class="dropdown-item" href="printing_1.html">Printing</a> <a class="dropdown-item" href="../mankati/load.html">Loading/Unloading</a> <a class="dropdown-item" href="troubleshoot.html">Troubleshooting</a> <a class="dropdown-item" href="specs.html">Specifications</a> </div>
       </li>
       <li class="nav-item"> <a class="nav-link" href="../info.html">Information</a></li>
@@ -31,17 +31,13 @@
   <p>Slicing, or toolpath generation, is preparing your model for 3D printing.</p>
   <h3>Model Preparation</h3>
   <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <span class="code-format">.stl</span> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may also need to select the orientation of the model.</p>
-  <h3>Software (CreatorK)</h3>
-  <p>Install the CreatorK software from the SD card provided with the Edison+ printer.</p>
-  <p>Placeholder for Korean settings</p>
-  <img src="img/machine.png" style="width: 90%">
-  <p>Under the menu, Select Machine &rarr; Machine Type (Driver) &rarr; The Edison+ Single.</p>
-  <p>Load the model (<span class="code-format">.stl</span>) into CreatorK and ensure that the size and orientation of the model is correct. You may use the built-in tools in CreatorK to adjust the position of your model.</p>
+  <h3>Software (MankatiUM)</h3>
+  <p>1. Install the MankatiUM software from the SD card provided with the Mankati printer.</p>
+  <p>2. </p>
   <p><b>Your model must not exceed 90% of the build plate!</b></p>
   <h3>Recommended Settings</h3>
-  <p>Placeholder</p>
   <h3>Transferring to Printer</h3>
-  <p>Copy the generated <span class="code-format">.x3g</span> file into the SD card and slot it into the printer.</p>
+  <p>Copy the generated <span class="code-format">.gcode</span> file into the SD card and slot it into the printer.</p>
   <p>You may like to review the <a href="printing_1.html">printing procedure</a>.</p>
 </div>
 <script src="../js/jquery.js"></script> 
