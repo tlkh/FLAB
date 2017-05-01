@@ -1,41 +1,52 @@
 body {
-    padding-top: 3em;
+	padding-top: 3em;
 	padding-bottom: 3em;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
 }
-
+.bg-inverse{
+	background-color: #a70026!important;
+}
 .lead-page {
-    padding: 2rem 1.5em;
-    text-align: center;
+	padding: 2rem 0em;
+	text-align: center;
 }
-
 .lead-img {
+	width: 40%;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.alignment-center {
+	text-align: center;
 	align-items: center;
 	align-content: center;
 }
-
+.action-button {
+	padding-left: 1em;
+	padding-right: 2em;
+	text-align: left;
+}
+.action-button:after {
+	font-family: FontAwesome;
+	content: "\f105";
+	margin-right: -1em;
+	float: right;
+	color: lightgray;
+}
+.homepage-action {
+	margin: 0.4em;
+	width: 7em;
+}
 .button-3d {
 	height: 1.2em;
 }
-
 .printer {
 	width: 50%;
 	text-align: center;
 }
-
 .code-format {
 	font-family: monospace;
 }
-
-.sequence {
-	border-radius: 0.3em;
-	padding: 0.3em;
-	background-color: lightgoldenrodyellow;
-	font-weight: bold;
-	font-size: 1em;
-}
-
 .instruction-img {
 	width: 80%;
 	padding: 2px;
