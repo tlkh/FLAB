@@ -4,6 +4,16 @@ body {
 	padding-left: 1px;
 	padding-right: 1px;
 }
+@media (min-width: 1200px) {
+	.container{
+		width: 45%;
+	}
+}
+@media (min-width: 992px) {
+	.container{
+		width: 55%;
+	}
+}
 .bg-inverse{
 	background-color: #a70026!important;
 }

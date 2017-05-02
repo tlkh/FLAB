@@ -26,26 +26,45 @@
   </div>
 </nav>
 <div class="container"> <br>
-  <h1>Slicing</h1>
+  <h1>Slicing (Edison+)</h1>
   <p>Slicing, or toolpath generation, is preparing your model for 3D printing.</p>
+  <img src="img/flow.png" class="instruction-img">
+  <div class="alert alert-info" role="alert">
+    <p><b>Quick Summary</b><br>
+      Slicing Software: CreatorK 9.0<br>
+      Build Plate Size (mm): 225 &times; 145 &times; 200</p>
+  </div>
   <h3>Model Preparation</h3>
-  <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <span class="code-format">.stl</span> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may also need to select the orientation of the model.</p>
+  <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <code>.stl</code> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may need to reorientation of the model for better output.</p>
   <h3>Software (CreatorK)</h3>
-  <p>Install the CreatorK software from the SD card provided with the Edison+ printer.</p>
+  <p>Install the <b>CreatorK 9.0</b> software from the SD card provided with the Edison+ printer.<br>
+    You may also download the installer from this <a href="https://drive.google.com/drive/folders/0B_1unadYTP5XVkxtRHl5dWl1SUk?usp=sharing">link</a>.</p>
   <img src="img/creatork1.JPG" class="instruction-img">
+  <br>
   <p>By default, the software will be in Korean. Follow the steps in the screenshots below to change the language to English.</p>
   <img src="img/creatork2.JPG" class="instruction-img"> <img src="img/creatork3.JPG" class="instruction-img">
-  <p>Under the menu, Select Machine &rarr; Machine Type (Driver) &rarr; The Edison+ Single.</p>
-  <img src="img/machine.png" class="instruction-img">
+  <br>
+  <p>You will need also to change some settings in CreatorK.<br>
+    Under the menu, Select Machine &rarr; Machine Type (Driver) &rarr; The Edison+ Single.<br>
+    Next, Go to GCode &rarr; GCode Generator and make sure <b>Skeinforge (50)</b> is selected.</p>
   <h3>Generating Toolpath</h3>
-  <p>Load the model (<span class="code-format">.stl</span>) into CreatorK.<br>
-    You may need to resize the window in order for the display to refresh. Ensure that the size and orientation of the model is correct. You may use the built-in tools in CreatorK to adjust the position of your model.<br>
-    <b>Your model must not exceed 90% of the build plate!</b></p>
+  <p>Load the model (<code>.stl</code>) into CreatorK.<br>
+    You may need to resize the window in order for the display to refresh. Ensure that the size and orientation of the model is correct.</p>
+    <img src="img/creatork.png" class="instruction-img">
+    <p>You may use the built-in tools in CreatorK to adjust the position of your model.<br>
+    Take special care to ensure that the model is not floating or under the build plate.<br>
+    You may center your model using the Move tool, and orientate it using the Rotate tool.
+    <b>Your model should not exceed 90% of the build plate!</b></p>
   <h3>Recommended Settings</h3>
   <img src="img/setting.jpg" class="instruction-img">
   <h3>Transferring to Printer</h3>
-  <p>Copy the generated <span class="code-format">.x3g</span> file into the SD card and slot it into the printer.</p>
-  <p>You may like to review the <a href="printing_1.html">printing procedure</a>.</p>
+  <p>Generate the GCode. This may take a while.<br>
+  After the GCode is generated, open the message window (GCode > Message Window).<br>
+  Next, select GCode > Estimate. Switch to the message window and you will be able to see the estimated printing time of the model.<br>
+  Export the <code>.x3g</code> file and save it inside the SD card.
+  </p>
+  <p>Slot the SD card into the printer with the label facing away from you.</p>
+  <p>You may like to review the <a href="printing_1.html">printing procedure</a> before you start printing.</p>
 </div>
 <script src="../js/jquery.js"></script> 
 <script src="../js/bootstrap.min.js"></script>

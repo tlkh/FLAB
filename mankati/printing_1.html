@@ -26,33 +26,47 @@
   </div>
 </nav>
 <div class="container"> <br>
+  <div class="alert alert-info" role="alert">
+    <p>Before printing, you should have already:</p>
+    <ol>
+      <li>Prepared your <code>.gcode</code> file</li>
+      <li>Already booked the printer you wish to use</li>
+      <li>Loaded the SD card inside the printer (label facing up)</li>
+      <li>Estimate your printing time and filament usage</li>
+      <li>Check if the printer has sufficient filament, and that the filament is not entangled</li>
+      <li>Log your print inside the log file before you start to print</li>
+    </ol>
+  </div>
   <h1>Step 1: Preparation</h1>
   <h3>1. Auto Home</h3>
   <img class="instruction-img" src="img/screen.JPG">
-  <p class="sequence">Push in the control knob to give the <b>ENTER</b> command</p>
+  <p class="alert alert-warning" role="alert">Push in the control knob to give the <b>ENTER</b> command</p>
   <img class="instruction-img" src="img/screen_prepare.JPG">
-  <p class="sequence">Turn the knob clockwise to Prepare and press ENTER</p>
+  <p class="alert alert-warning" role="alert">Turn the knob clockwise to Prepare and press ENTER</p>
   <img src="img/autohome1.JPG" class="instruction-img">
-  <p class="sequence">Turn the knob clockwise to Auto home and press ENTER</p>
-  <p>The build plate will begin to move up towards the extruder. It will stop when it reaches the extruder.<br>This step resets the <span class="code-format">Z = 0.0 mm</span> point.</p>
+  <p class="alert alert-warning" role="alert">Turn the knob clockwise to Auto home and press ENTER</p>
+  <p>The build plate will begin to move up towards the extruder. It will stop when it reaches the extruder.<br>
+    This step resets the <code>Z = 0.0 mm</code> point.</p>
   <img src="img/autohome2.JPG" class="instruction-img">
   <p>When you see this, you can preceed to the next step.</p>
   <h3>2. Loading Filament</h3>
-  <p class="sequence">Turn the knob clockwise to scroll to Preheat PLA and press ENTER</p>
+  <p class="alert alert-warning" role="alert">Turn the knob clockwise to scroll to Preheat PLA and press ENTER</p>
   <img src="img/preheat_PLA1.JPG" class="instruction-img">
-  <p class="sequence">Scroll to Preheat PLA 1 and press ENTER</p>
+  <p class="alert alert-warning" role="alert">Scroll to Preheat PLA 1 and press ENTER</p>
   <img src="img/screen_heating.JPG" class="instruction-img">
-  <p>The extruder will begin to heat up to the target temperature from the current temperature. These are marked in the picture above.<br>While it is heating, follow the steps below to move the build plate down to <span class="code-format">Z = 30.0 mm</span> or more. Do not turn the knob too far ahead as the printer will follow through with the command even if it is reversed!</p>
-  <p class="sequence">Menu Sequence: ENTER &rarr; Prepare &rarr; Move axis &rarr; Move 1mm &rarr; Move Z</p>
+  <p>The extruder will begin to heat up to the target temperature from the current temperature. These are marked in the picture above.<br>
+    While it is heating, follow the steps below to move the build plate down to <code>Z = 30.0 mm</code> or more. Do not turn the knob too far ahead as the printer will follow through with the command even if it is reversed!</p>
+  <p class="alert alert-warning" role="alert">Menu Sequence: ENTER &rarr; Prepare &rarr; Move axis &rarr; Move 1mm &rarr; Move Z</p>
   <img src="img/menu_z.JPG" class="instruction-img">
-  <p class="sequence">Press ENTER and turn the knob clockwise</p>
+  <p class="alert alert-warning" role="alert">Press ENTER and turn the knob clockwise</p>
   <img src="img/move_z.JPG" class="instruction-img">
-  <p class="sequence">Press ENTER to exit and scroll to Extruder</p>
+  <p class="alert alert-warning" role="alert">Press ENTER to exit and scroll to Extruder</p>
   <img src="img/menu_extruder.JPG" class="instruction-img">
-  <p class="sequence">Press ENTER and turn the knob clockwise</p>
+  <p class="alert alert-warning" role="alert">Press ENTER and turn the knob clockwise</p>
   <img src="img/move_extruder.JPG" class="instruction-img">
-  <p>When the extruder head is heated and filament is loaded properly, filament will begin to flow out of the extruder head.<br>If you encounter any problems, please review the <a href="troubleshoot.html">troubleshooting procedures</a> or call Fab Lab staff for help.</p>
-  <p class="sequence">Press and hold ENTER to exit into the home screen.</p>
+  <p>When the extruder head is heated and filament is loaded properly, filament will begin to flow out of the extruder head.<br>
+    If you encounter any problems, please review the <a href="troubleshoot.html">troubleshooting procedures</a> or call Fab Lab staff for help.</p>
+  <p class="alert alert-warning" role="alert">Press and hold ENTER to exit into the home screen.</p>
   <div class="row">
     <div class="col"><a class="btn btn-outline-primary btn-block disabled" href="#" role="button">Back</a></div>
     <div class="col"></div>

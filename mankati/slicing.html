@@ -28,17 +28,30 @@
 <div class="container"> <br>
   <h1>Slicing</h1>
   <p>Slicing, or toolpath generation, is preparing your model for 3D printing.</p>
-  <h3>Model Preparation</h3>
-  <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <span class="code-format">.stl</span> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may also need to select the orientation of the model.</p>
-  <h3>Software (MankatiUM)</h3>
-  <p>1. Install the MankatiUM software from the SD card provided with the Mankati printer.</p>
-  <p>2. Load your model (<span class="code-format">.stl</span>) into MankatiUM and use the built-in tools to orientate your model.<br>
-  You can even make duplicates of your model from within MankatiUM to print more than one at one time.</p>
-  <p><b>Your model must not exceed 90% of the build plate!</b></p>
-  <h3>Recommended Settings</h3>
+  <img src="img/flow.png" class="instruction-img">
+  <div class="alert alert-info" role="alert">
+    <p><b>Quick Summary</b><br>
+      Slicing Software: MankatiUM 6.5<br>
+      Build Plate Size (mm): 260 &times; 260 &times; 300</p>
+  </div>
+  <h3>1. Model Preparation</h3>
+  <p>In your 3D CAD software (Solidworks/Rhino/Inventor etc.), export your 3D model into a <code>.stl</code> file. If prompted, remember to select the units (e.g. mm) that you designed the model in. You may also need to reorientation of the model for better output.</p>
+  <h3>2. Software (MankatiUM)</h3>
+  <p>Install the MankatiUM software from the SD card provided with the Mankati printer.<br>
+  You may also download it from this <a href="https://drive.google.com/open?id=0B_1unadYTP5XTWZJZWxGUjJJYk0">link</a>.</p>
+  <h3>3. Recommended Settings</h3>
+  <p>After selecting the "Normal" print profile, switch to full settings.</p>
+  <img src="img/fullsettings.jpg" class="instruction-img">
+  <p>Next, change the following settings.</p>
   <img src="img/settings.jpg" class="instruction-img">
-  <h3>Transferring to Printer</h3>
-  <p>Copy the generated <span class="code-format">.gcode</span> file into the SD card and slot it into the printer.</p>
+  <h3>4. Slicing and Transferring to Printer</h3>
+  <p>You need to slice your model before transferring to the printer.</p>
+  <p>1. Load your model (<code>.stl</code>) into MankatiUM and use the built-in tools to orientate your model.<br>
+  You can even make duplicates of your model from within MankatiUM to print more than one at one time.<br>
+  After you are done, click Slice to generate the toolpath and save it to the SD Card.</p>
+  <img src="img/slice.jpg" class="instruction-img">
+  <p><b>Your model should not exceed 90% of the build plate!</b></p>
+  <p>Copy the generated <code>.gcode</code> file into the SD card and slot it into the printer (label facing up).</p>
   <p>You may like to review the <a href="printing_1.html">printing procedure</a>.</p>
 </div>
 <script src="../js/jquery.js"></script> 
